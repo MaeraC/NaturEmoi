@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* 
+{
+    font-family: 'Montserrat';
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0 auto;
+    background-color: #daf1c3;
+}
+
+section.top-page
+{
+    background: url("../images/bg.jpg");
+    background-size: cover; 
+    height: 80vh; 
+    padding: 25px;
+}
+/*En-tête*/
+
+header
+{
+    display: flex; 
+    align-items: center;
+}
+header img 
+{
+    width: 150px; 
+}
+
+/*Menu de naviguation*/
+
+nav.nav 
+{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 30px;
+    width: 400px;
+}
+
+
+nav.nav li a
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav.nav li a:hover
+{
+    color: #ADD981;
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+/*Page de bienvenue (landing-page)*/
+
+.landing-page
+{
+    padding: 20px  50px ;
+}
+.bigtitle
+{
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril FatFace';
+    font-weight: 100; 
+    text-shadow: 6px 6px 5px black;
+}
+
+.scroll
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    bottom: 80px; 
+}
+
+.scroll:hover
+{
+    color: #ADD981;
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+/*Services */
+
+.service 
+{
+    display: flex; 
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.service-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicedescription
+{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+.icone
+{
+    font-size: 50px;
+    color: rgb(107, 209, 104);
+
+    
+}
+
+/*Meilleures ventes*/
+
+.titresection
+{
+    font-size: 50px;
+    font-family: 'Abril FatFace';
+    font-weight: 100;
+    position: relative;
+}
+
+.titresection::before 
+{
+    content:"";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.meilleuresventes
+{
+    margin: 100px;
+}
+
+.bestplants
+{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plants
+{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.nogrid
+{
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+
+}
+
+.plant1
+{
+    background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+.plant2
+{
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3
+{
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.plant4
+{
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.plantsdescription
+{
+    position: absolute;
+    background-color: #FFFFFFDF; 
+    bottom: 0;
+    width: 100%; 
+    padding: 5px 20px ;
+}
+
+.nomplante
+{
+    font-size: 22px;
+    font-weight: 600px;
+    line-height: 3px;
+}
+
+.prixplante
+{
+    color: #ADD981;
+    text-shadow: 2px 2px 1px black;
+    font-weight: 800;
+    font-size: 1.2em;
+    line-height: 3px; 
+}
+
+/*Nos plantes*/
+
+.nosplantes
+{
+    margin: 100px;
+}
+
+.plantgrid
+{
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+.plantgrid1
+{
+    background-image: url(../images/nos_plantes/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.plantgrid2
+{
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 3/5;
+
+}
+
+.plantgrid3
+{
+    background-image: url(../images/nos_plantes/3.jpg);
+    grid-column: 3/5;
+}
+
+.plantgrid4
+{
+    background-image: url(../images/nos_plantes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.plantgrid5
+{
+    background-image: url(../images/nos_plantes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.plantgrid6
+{
+    background-image: url(../images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/*Pied de page*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+    font-weight: 600px;
+}
+
+footer a.cgv
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.copyright
+{
+    font-weight: bold;
+}
