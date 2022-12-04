@@ -57,6 +57,14 @@ nav.nav
         width: 75%;
     }
 }
+@media screen and (max-width: 550px) {
+    nav.nav {
+        font-size: 13px;
+    }
+    header img {
+        width: 80px;
+    }
+}
 nav.nav li a
 {
     color: white;
@@ -88,6 +96,12 @@ nav.nav li a:hover
         font-size: 60px;
     }
 }
+@media screen and (max-width: 550px) {
+    .bigtitle {
+        font-size: 55px;
+        line-height: 65px;
+    }
+}
 
 .scroll
 {
@@ -110,8 +124,9 @@ nav.nav li a:hover
 .service 
 {
     display: flex; 
-    justify-content: space-around;
-    margin: 50px;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
 }
 
 .service-item
@@ -138,8 +153,16 @@ nav.nav li a:hover
 {
     font-size: 50px;
     color: rgb(107, 209, 104);
+}
 
-    
+@media screen and (max-width: 550px)  {
+    .icone {
+        font-size: 35px; 
+    }
+    .servicedescription {
+        font-size: 14px;
+        font-weight: normal;
+    }
 }
 
 /*Meilleures ventes*/
@@ -150,6 +173,11 @@ nav.nav li a:hover
     font-family: 'Abril FatFace';
     font-weight: 100;
     position: relative;
+}
+@media screen and (max-width: 500px) {
+    .titresection {
+        font-size: 30px;
+    }
 }
 
 .titresection::before 
@@ -165,6 +193,12 @@ nav.nav li a:hover
 .meilleuresventes
 {
     margin: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .meilleuresventes {
+        margin: 30px;
+    }
 }
 
 .bestplants
