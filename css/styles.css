@@ -20,7 +20,7 @@ section.top-page
 {
     background: url("../images/bg.jpg");
     background-size: cover; 
-    height: 80vh; 
+    height: 100vh; 
     padding: 25px;
 }
 /*En-tête*/
@@ -29,13 +29,19 @@ header
 {
     display: flex; 
     align-items: center;
+    justify-content: space-between;
 }
 header img 
 {
     width: 150px; 
 }
+@media screen and (max-width: 700px) {
+    header img  {
+        width: 100px;
+    }
+}
 
-/*Menu de naviguation*/
+/*Menu de navigation*/
 
 nav.nav 
 {
@@ -45,19 +51,21 @@ nav.nav
     margin-left: 30px;
     width: 400px;
 }
-
-
+@media screen and (max-width: 700px) {
+    nav.nav {
+        font-size: 15px;
+        width: 75%;
+    }
+}
 nav.nav li a
 {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-
 nav.nav li a:hover
 {
     color: #ADD981;
-    font-size: 1.1em;
     transition: 0.2s;
 }
 
@@ -75,6 +83,11 @@ nav.nav li a:hover
     font-weight: 100; 
     text-shadow: 6px 6px 5px black;
 }
+@media screen and (max-width: 700px) {
+    .bigtitle {
+        font-size: 60px;
+    }
+}
 
 .scroll
 {
@@ -82,7 +95,7 @@ nav.nav li a:hover
     font-weight: bold;
     text-decoration: none;
     position: absolute;
-    bottom: 80px; 
+    bottom: 20px; 
 }
 
 .scroll:hover
@@ -113,6 +126,12 @@ nav.nav li a:hover
     font-weight: 600;
     width: 200px;
     text-align: center;
+}
+@media screen and (max-width: 700px) {
+    .servicedescription {
+        width: 100px;
+        font-size: 15px;
+    }
 }
 
 .icone
@@ -195,7 +214,7 @@ nav.nav li a:hover
     position: absolute;
     background-color: #FFFFFFDF; 
     bottom: 0;
-    width: 100%; 
+    width: 90%; 
     padding: 5px 20px ;
 }
 
@@ -208,8 +227,7 @@ nav.nav li a:hover
 
 .prixplante
 {
-    color: #ADD981;
-    text-shadow: 2px 2px 1px black;
+    color: #94cc5c;
     font-weight: 800;
     font-size: 1.2em;
     line-height: 3px; 
@@ -277,8 +295,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 100px;
+    padding: 20px 100px;
     font-weight: 600px;
+    background: #ADD981;
 }
 
 footer a.cgv
@@ -291,4 +310,13 @@ footer a.cgv
 .copyright
 {
     font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    footer  {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 30px;
+        flex-direction: column;
+    }
 }
